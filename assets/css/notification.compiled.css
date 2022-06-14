@@ -1,0 +1,56 @@
+.link__indicator {
+  width: 12px;
+  height: 12px;
+  display: block;
+  background: red;
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  border-radius: 50%;
+}
+.link__indicator:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: red;
+}
+.link__indicator--not-smooth:after {
+  animation: pulse 900ms ease-in-out infinite;
+}
+.link__indicator--smooth:after {
+  animation: smoothpulse 900ms ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+  }
+  90% {
+    top: -3.6px;
+    left: -3.6px;
+    width: 19.2px;
+    height: 19.2px;
+    opacity: 0.1;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    opacity: 0;
+  }
+}
+@keyframes smoothpulse {
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}

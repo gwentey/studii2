@@ -1,0 +1,18 @@
+.image-moi-forover:hover span {
+  display: initial;
+}
+
+.image-moi-forover span {
+  display: none;
+  position: absolute;
+  background-color: #f8f9fa;
+  padding: 7px;
+  flex: 1 1 auto;
+  min-height: 1px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  margin-left: -5px;
+}
+
